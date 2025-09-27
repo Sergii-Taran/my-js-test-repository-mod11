@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weater Forecast</title>
+    <script type="module" crossorigin src="/my-js-test-repository-mod11/3-weather-forecast.js"></script>
+    <link rel="modulepreload" crossorigin href="/my-js-test-repository-mod11/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/my-js-test-repository-mod11/assets/styles-C5P_ezC5.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
+        <h1 class="main-title">Weater Forecast</h1>
+      </div>
+
+      <form action="submit" class="js-search-form search-form">
+        <div class="form-group">
+          <label for="city" class="label">Введіть назву міста:</label>
+          <input
+            type="text"
+            name="city"
+            class="search-input"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="days" class="label">Виберіть кількість днів:</label>
+          <div class="input-group">
+            <select name="days" class="days-select">
+              <option value="1">3</option>
+              <option value="2">5</option>
+              <option value="3">7</option>
+            </select>
+            <button class="search-button">Пошук</button>
+          </div>
+        </div>
+      </form>
+      <ul class="js-list weather-cards"></ul>
+    </main>
+
+  </body>
+</html>
