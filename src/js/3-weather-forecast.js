@@ -19,7 +19,7 @@ function handleSearch(event) {
     .catch(error => {});
 }
 
-function fetchData(city = '', days = 3) {
+function fetchData(city = '', days = 1) {
   const params = new URLSearchParams({
     key: API_KEY,
     q: city,
